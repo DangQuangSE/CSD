@@ -1,0 +1,53 @@
+# ========================
+# Code::Blocks files
+# ========================
+*.cbp
+*.layout
+*.depend
+*.workspace
+
+# Auto-generated folders
+bin/
+obj/
+
+# ========================
+# Compiled files
+# ========================
+*.o
+*.obj
+*.exe
+*.out
+*.app
+
+# ========================
+# Debug / Release folders
+# ========================
+Debug/
+Release/
+
+# ========================
+# Logs & temp files
+# ========================
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# ========================
+# OS specific
+# ========================
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# macOS
+.DS_Store
+
+# ========================
+# VS Code (nếu mở chung)
+# ========================
+.vscode/
