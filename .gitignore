@@ -5,7 +5,7 @@
 *.layout
 *.depend
 *.workspace
-
+*.txt
 # Auto-generated folders
 bin/
 obj/
