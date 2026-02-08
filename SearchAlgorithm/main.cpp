@@ -95,6 +95,30 @@ int countNumberRight(const vector<int>& arr, int condition){
     }
     return count;
 }
+/*
+Kiểm tra mảng A có chứa mảng B không.
+A = [1, 3, 5, 7]
+B = [3, 8]
+→ false
+*/
+bool checkArrayContainsOrthers(const vector<int>& arrA, const vector<int>& arrB){
+    if(arrA.empty()) return false;
+    if(arrA.size() < arrB.size()) return false;
+    bool flag = true;
+    for(int i = 0; i + arrB.size() <= arrA.size(); i++){
+        flag = true;
+        if(arrA[i] == arrB[0]){
+            for(int j = 1; j < arrB.size(); j++){
+                if(arrA[i + j] != arrB[j]){
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag) return flag;
+        }
+    }
+    return false;
+}
 int main()
 {
     vector<int> arr;
