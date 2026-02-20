@@ -89,6 +89,31 @@ int countXInArray(const vector<int>& arr, int x){
     return last - first + 1;
 
 }
+/*
+Tìm phần tử đầu tiên ≥ x.
+a = [1, 3, 5, 6, 7, 9]
+x = 6
+output:7
+*/
+int findFirstNumberGreaterThanX(const vector<int>& arr, int x){
+    int left = 0;
+    int right = arr.size() - 1;
+    int result = -1;
+    while(left <= right){
+        int mid = left + (right - left)/2;
+        if(arr[mid] == x){
+            result = arr[mid];
+            return result;
+        }
+        if(arr[mid] < x){
+            left = mid + 1;
+        }else{
+            result = arr[mid];
+            right = mid - 1;
+        }
+    }
+    return result;
+}
 int main()
 {
 
